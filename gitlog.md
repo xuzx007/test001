@@ -19,3 +19,17 @@ $ git diff
 $ git log
 $ git log --pretty=oneline
 ```
+
+在Git中用`HEAD`表示当前版本，上一个版本就是`HEAD^`,上上个版本就是`HEAD^^`.
+上100个版本写成`HEAD~100`
+
+`commit id`由一串数字和字符来表示版本号。用以下命令可以在不同版本间转换
+```
+git reset --hard HEAD^
+```
+
+```
+git reset --hard commit id
+```
+
+用`git reflog`来查看历史命令
