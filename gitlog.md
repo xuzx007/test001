@@ -1,3 +1,16 @@
+# ssh链接github
+
+# 使用多个ssh key
+在后台启动ssh-agent
+```
+$ eval $(ssh-agent -s)
+> Agent pid 59566
+```
+Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace `id_rsa` in the command with the name of your private key file.
+```
+$ ssh-add ~/.ssh/id_rsa
+```
+
 ```
 $ git config --global user.name "user name"
 $ git config --global user.email "email@example.com"
