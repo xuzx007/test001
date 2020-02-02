@@ -33,3 +33,5 @@ git reset --hard commit id
 ```
 
 用`git reflog`来查看历史命令
+
+`git checkout -- file`可以用来丢弃工作区的修改
