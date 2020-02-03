@@ -1,5 +1,5 @@
 # 链接github
-##创建SSH Key
+## 创建SSH Key
 ```
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
