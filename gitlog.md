@@ -13,6 +13,11 @@ $ git remote add origin git@github.com:yourgitacount/yourgitdir.git
 ```
 远程库的名字就是`origin`，这是Git默认的叫法，也可以改成别的，但是`origin`这个名字一看就知道是远程库。
 
+### 克隆远程库
+```
+git clone git@github.com:yourgitacount/yourgitdir.git
+```
+
 ### git远程推送
 ```
 git push -u origin master
@@ -70,3 +75,14 @@ git reset --hard commit id
 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令`git checkout -- file`
 
 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD <file>`，就回到了场景1，第二步按场景1操作。
+
+## 分支
+建立分支
+```
+$ git checkout -b dev
+
+```
+或者
+```
+$ git switch -c dev
+```
