@@ -77,7 +77,7 @@ git reset --hard commit id
 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD <file>`，就回到了场景1，第二步按场景1操作。
 
 ## 分支
-建立分支
+建立分支并切换到`dev`
 ```
 $ git checkout -b dev
 
@@ -85,4 +85,27 @@ $ git checkout -b dev
 或者
 ```
 $ git switch -c dev
+```
+
+切换分支
+```
+$ git checkout dev
+```
+或
+```
+$ git switch master
+```
+
+查看分支
+```
+$ git branch
+```
+合并某分支到当前分支
+```
+$ git merge <name>
+```
+
+删除分支
+```
+$ git branch -d dev
 ```
