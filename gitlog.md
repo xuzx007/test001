@@ -1,6 +1,25 @@
-# ssh链接github
+# 链接github
+##创建SSH Key
+```
+$ ssh-keygen -t rsa -C "youremail@example.com"
+```
+key会保存到用户的`.ssh`目录下。.ssh目录，里面有`id_rsa`和`id_rsa.pub`两个文件，这两个就是SSH Key的秘钥对，`id_rsa`是私钥，不能泄露出去，`id_rsa.pub`是公钥，可以放心地告诉任何人。
 
-# 使用多个ssh key
+
+把一个以有的本地仓库与github仓库关联。
+
+```
+$ git remote add origin git@github.com:yourgitacount/yourgitdir.git
+```
+远程库的名字就是`origin`，这是Git默认的叫法，也可以改成别的，但是`origin`这个名字一看就知道是远程库。
+
+### git远程推送
+```
+git push -u origin master
+git push origin master
+```
+
+## 使用多个ssh key
 在后台启动ssh-agent
 ```
 $ eval $(ssh-agent -s)
