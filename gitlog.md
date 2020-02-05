@@ -100,4 +100,4 @@ $ git branch
 $ git branch -d dev
 ```
 
-或者`$ git log`查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`或者`$ git log`
+以图形方式查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`
