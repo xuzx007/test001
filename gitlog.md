@@ -100,12 +100,11 @@ $ git switch master
 ```
 $ git branch
 ```
-合并某分支到当前分支
-```
-$ git merge <name>
-```
+合并某分支到当前分支`$ git merge <name>`如有冲突需要自行解决
 
 删除分支
 ```
 $ git branch -d dev
 ```
+
+以图形方式查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`
