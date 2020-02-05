@@ -101,3 +101,5 @@ $ git branch -d dev
 ```
 
 以图形方式查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`
+
+不使用`Fast forward`试式合并`$ git merge --no-ff -m "merge with no-ff" dev`
