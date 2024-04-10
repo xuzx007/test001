@@ -88,6 +88,7 @@ $ git switch -c dev
 ```
 
 切换分支`$ git checkout dev`或`$ git switch master`
+这两个命令实现的功能是相同的，只是语法上略有不同。$ git switch -b dev 在 Git 2.23 版本之前使用较多，而 $ git switch -c dev 是新的语法。
 
 查看分支
 ```
